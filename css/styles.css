@@ -142,8 +142,6 @@ header button{
 
 /*Seccion tratamientos/index */
 .tratamientos {
-  display: flex;
-  justify-content: center;
   padding: 2rem;
   background: #f9f9f9;
 }
