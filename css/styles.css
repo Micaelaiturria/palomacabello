@@ -156,8 +156,8 @@ header button{
 }
 
 .grid-tratamientos {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); 
+  display: flex;
+  flex-direction: column; 
   gap: 1rem;
   margin: 0% 10%;
 }
