@@ -105,9 +105,10 @@ header button{
 .objetivo {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 2rem;
   gap: 2rem;
+  margin: 5% 15% 5% 15%;
   }
 
 .objetivo .content {
@@ -115,11 +116,16 @@ header button{
 }
 
 .content {
+  display: flex;
   flex-direction: column;
 }
+.content a {
+  width: 35%;
+} 
 .objetivo img {
   max-width: 300px;
 }
+
 .btn {
   background: #00c6c6;
   color: white;
@@ -136,6 +142,8 @@ header button{
 
 /*Seccion tratamientos/index */
 .tratamientos {
+  display: flex;
+  justify-content: center;
   padding: 2rem;
   background: #f9f9f9;
 }
