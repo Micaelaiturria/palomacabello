@@ -253,28 +253,41 @@ footer {
   text-decoration: none;
   font-size: 1.2rem;
 }
-  /*html clinica*/ 
 
-  .profesionales-dentales-malaga{
-    width: 1400px;
-  }
 
-  .img-consultorio{
-    width: 400px;
-  }
+  /*html clinica----------------------------------------*/ 
+.text-clinica{
+  text-align: center;
+}
+.text-clinica p{
+  margin: 3vh 15%;
+}
+.galeria-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
+  gap: 2px 2px; 
+  grid-template-areas: 
+    "img-1 img-1 img-2 img-2 img-2 img-2 img-3 img-3"
+    "img-1 img-1 img-2 img-2 img-2 img-2 img-3 img-3"
+    "img-4 img-4 img-4 img-5 img-5 img-6 img-6 img-6"
+    "img-4 img-4 img-4 img-5 img-5 img-6 img-6 img-6"
+    ". . . . . . . ."; 
+  margin: 5% 10% 0% 10%;
+}
+  .img-1 { grid-area: img-1; }
+  .img-2 { grid-area: img-2; }
+  .img-3 { grid-area: img-3; }
+  .img-4 { grid-area: img-4; }
+  .img-5 { grid-area: img-5; }
+  .img-6 { grid-area: img-6; }
 
-  .img-recepcion{
-    width: 400px;
-  }
-
-  .img-consultorio1{
-    width: 400px;
-  }
-
-  .img-consultorio2{
-    width: 400px;
-  }
-
+.galeria-container img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
 
 
   /*html equipo---------------------------------------------------------------------------------*/
@@ -286,7 +299,7 @@ footer {
 
 
 
-  /*html tratamientos-----------------------------------------------------------------------*/
+  /*html tratamientos-----------------------------------------------------------------------
 
   .icon-tr{
     width: 20px;
@@ -316,7 +329,7 @@ footer {
   main div button:hover{
     background: #dfe0e0;
 
-  }
+  }**/
   /**html contacto------------------------**/
   
   .contacto {
@@ -338,8 +351,8 @@ footer {
   .box-formulario {
     background-color: white;
     width: 40%;
-    height: 50%;
-    padding: 20vh
+    height: 30%;
+    padding: 10vh
   }
 
 /**Responsive----------------------------------------------------------**/
