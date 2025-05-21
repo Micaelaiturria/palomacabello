@@ -39,82 +39,48 @@
 
     </header>
 
-    <main class="contacto">
-        <div class="mapa">
-            <div>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3203.051072640526!2d-4.534946624364423!3d36.60107897230455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72fc9ac787a739%3A0xe456520502fe81ad!2sCl%C3%ADnica%20Dental%20Paloma%20Cabello!5e0!3m2!1ses!2ses!4v1747422143706!5m2!1ses!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <body>
+        <div class="container">
+            <div class="formulario">
+                <h2>Contáctanos</h2>
+                <form>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required />
+
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" required />
+
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required />
+
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+                    <div class="checkbox">
+                        <input type="checkbox" id="suscribirse" name="suscribirse" />
+                        <label for="suscribirse">Suscribirme al newsletter.</label>
+                    </div>
+
+                    <button type="submit">Enviar</button>
+                </form>
             </div>
-            <div class="direccion">
-                <p>Av. Salvador Vicente 7, Bajo 2. 29631. Arroyo de la Miel, Benalmadena. </p>
+
+            <div class="mapa">
+                <h3>Estamos aquí:</h3>
+                <p>Av. Salvador Vicente 7, Bajo 2. 29631. </p>
+                <p>Arroyo de la Miel, Benalmadena.</p>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3203.051072640526!2d-4.534946624364423!3d36.60107897230455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72fc9ac787a739%3A0xe456520502fe81ad!2sCl%C3%ADnica%20Dental%20Paloma%20Cabello!5e0!3m2!1ses!2ses!4v1747422143706!5m2!1ses!2ses" 
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
             </div>
         </div>
-        
-        <div class="box-formulario">
-            <!--Formulario de contacto-->
-            <form action="/submit" method="post">
-                <label for="nombre">Nombre:</label>
-                <input type="text" name="nombre" id="nombre"><br>
-
-                <label for="apellido">Apellido:</label>
-                <input type="text" name="apellido" id="nombre"><br>
-
-                <label for="mensaje">Mensaje</label>
-                <textarea name="mensaje" id="mensaje"></textarea><br>
-
-                <label for="suscribe">Suscribirse:</label>
-                <input type="checkbox" name="suscribe" id="suscribe"><br>
-
-                <input type="submit" value="Enviar">
-
-            </form>
-        </div>
-    </main>
+    </body>
 
     <!--Pie de Pagina--> 
-    <footer>
-        <div class="footer-container">
-        <div class="footer-about">
-            <img src="../medios/Logo-PCABELLO.png" alt="Logo-PCABELLO">
-            <p>con una amplia experiencia desde 1995, la clinica dental Paloma Cabello ofrece tratamientos dentales de calidad en la Costa del sol, garantizando un servicio profesional y personalizado.</p>
-            <div class="social-icons">
-            <img src="../medios/icon-fb.png" alt="Logo FB">
-            <img src="../medios/icon-ig.png" alt="Logo IG">
-            <img src="../medios/icon-tw.png" alt="Logo TW">
-            </div>
-        </div>
-
-        <div class="footer-links">
-            <h4>Menú</h4>
-            <ul>
-            <li><a href="../pages/laclinica.html">La Clínica</a></li>
-            <li><a href="../pages/elequipo.html">El equipo</a></li>
-            <li><a href="../pages/tratamientos.html">Tratamientos</a></li>
-            <li><a href="#">Contacto</a></li>
-            </ul>
-        </div>
-
-        <div class="footer-links">
-            <h4>Tratamientos</h4>
-            <ul>
-            <li>Implantes dentales</li>
-            <li>Endodoncias</li>
-            <li>Estética dental</li>
-            <li>Periodoncia</li>
-            <li>Protesis dentales</li>
-            <li>Ortodoncia</li>
-            <li>Maxilofacial</li>
-            <li>Higiene Bucodental</li>
-            </ul>
-        </div>
-
-        <div class="footer-contact">
-            <h4>Contacto</h4>
-            <p>📍 Av. Salvador Vicente Nº 7, Arroyo de la Miel</p>
-            <p>📞 625 441 303</p>
-            <p>✉️ palomacabellodiaz@gmail.com</p>
-            <a href="#" class="btn-footer">Pedir cita</a>
-        </div>
-        </div>
+    <footer class="footer-pcontacto">
+        <img src="../medios/Logo-PCABELLO.png" alt="Logo Paloma Cabello " />
+        <img src="../medios/LOGO-JUNTA_pages-to-jpg-0001.jpg" alt="Logo junta" />          
     </footer>
     <!--scrip bss-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>

@@ -370,28 +370,89 @@ footer {
   }**/
   /**html contacto------------------------**/
   
-  .contacto {
-    display: Flex;
-    justify-content: space-around;
-    background-image: url(../medios/Background.jpg);
-    background-position: center;
-    background-size: 100%;
-  }
-  .mapa {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-  }
+  .container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+  gap: 20px;
+}
 
-  .direccion {
-    margin-top: 10%;
-  }
-  .box-formulario {
-    background-color: white;
-    width: 40%;
-    height: 30%;
-    padding: 10vh
-  }
+.formulario {
+  flex: 1 1 45%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulario h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.formulario label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.formulario input,
+.formulario textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.checkbox {
+  margin-top: 15px;
+}
+
+.formulario button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #0077cc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.formulario button:hover {
+  background-color: #005fa3;
+}
+
+.mapa {
+  flex: 1 1 45%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.mapa h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+  /**footer contacto**/
+  .footer-pcontacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #222;
+}
+
+.footer-pcontacto img {
+  width: 15%;
+  height: auto;
+  
+}
 
 /**Responsive----------------------------------------------------------**/
 @media screen and (max-width: 400px) {
@@ -483,5 +544,7 @@ footer {
     font-size: 0.95rem;
     padding: 0.6rem 1rem;
   }
+
+  
 }
   
