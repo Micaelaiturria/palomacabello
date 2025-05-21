@@ -387,11 +387,11 @@ footer {
   }
 
   .nav-menu {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    gap: 8px;
+    gap: 2px;
     padding: 0;
-    margin: 10px 0;
+    font-size: small;
   }
 
   .objetivo,
