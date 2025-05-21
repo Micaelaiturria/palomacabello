@@ -318,17 +318,31 @@ footer {
 
   }
   /**html contacto------------------------**/
-  main{
-    background-image: url(../medios/benyamin-bohlouli-e7MJLM5VGjY-unsplash.jpg);
-    height: 400px;
-    background-size: cover;
+  
+  .contacto {
+    display: Flex;
+    justify-content: space-around;
+    background-image: url(../medios/Background.jpg);
     background-position: center;
-    color:#000000; 
+    background-size: 100%;
+  }
+  .mapa {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end; 
+    justify-content: flex-start;
   }
 
+  .direccion {
+    margin-top: 10%;
+  }
+  .box-formulario {
+    background-color: white;
+    width: 40%;
+    height: 50%;
+    padding: 20vh
+  }
+
+/**Responsive----------------------------------------------------------**/
  @media (max-width: 480px){
   header{
     flex-direction: column;
