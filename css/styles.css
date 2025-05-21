@@ -373,7 +373,7 @@ footer {
   
   .formulario-container {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   padding: 2%;
   max-width: 70%;
   margin: auto;
@@ -545,11 +545,8 @@ footer {
     font-size: 0.95rem;
     padding: 0.6rem 1rem;
   }
-  .formulario-container{
-    display: flex;
-    flex-direction: column;
-  }
-
+  
   
 }
+
   
