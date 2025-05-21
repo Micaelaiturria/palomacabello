@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <!--css bs-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <!--Css-->
     <link rel="stylesheet" href="../css/styles.css">
 
@@ -17,21 +18,24 @@
 <body>
     <!--Encabezado-->
     <header class="header">
-        <!--logo de la clinica-->
-         <div class="logo-clinica">
-         <img src="../medios/Logo-PCABELLO.png" alt="Logo Paloma Cabello">
-         </div>
-
-        <nav class="navbar">
-            <ul class="nav-menu">
-                <li class="navlist"><a href="../index.html">Inicio</a></li>
-                <li class="navlist"><a href="../pages/clinica.html">La clinica</a></li>
-                <li class="navlist"><a href="#">El equipo</a></li>
-                <li class="navlist"><a href="../pages/tratamientos.html">Tratamientos</a></li>
-                <li class="navlist"><a href="../pages/contacto.html">Contacto</a></li>
-                <li class="navlist"><Button>Pedir Cita</Button></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg propia">
+            <div class="container-fluid justify-content-end">
+                <a class="navbar-brand" style="margin-left: 10%;" href="../index.html"> <img src="../medios/Logo-PCABELLO.png" alt="logopalomacabello"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                        <a class="nav-link" href="./clinica.html">La Clinica</a>
+                        <a class="nav-link active" aria-current="page" href="#">El Equipo</a>
+                        <a class="nav-link" href="./tratamientos.html">Tratamientos</a>
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </div>
+                </div>
+            </div>
         </nav>
+
     </header>
 
     <main>
@@ -96,6 +100,7 @@
         </div>
         </div>
     </footer>
-    
+    <!--scrip bss-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -19,21 +19,24 @@
 <body>
     <!--Encabezado-->
     <header class="header">
-        <!--logo de la clinica-->
-         <div class="logo-clinica">
-         <img src="../medios/Logo-PCABELLO.png" alt="Logo Paloma Cabello">
-         </div>
-
-        <nav class="navbar">
-            <ul class="nav-menu">
-                <li class="navlist"><a href="../index.html">Inicio</a></li>
-                <li class="navlist"><a href="../pages/clinica.html">La clinica</a></li>
-                <li class="navlist"><a href="../pages/equipo.html">El equipo</a></li>
-                <li class="navlist"><a href="../pages/tratamientos.html">Tratamientos</a></li>
-                <li class="navlist"><a href="#">Contacto</a></li>
-                <li class="navlist"><Button>Pedir Cita</Button></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg propia">
+            <div class="container-fluid justify-content-end">
+                <a class="navbar-brand" style="margin-left: 10%;" href="../index.html"> <img src="../medios/Logo-PCABELLO.png" alt="logopalomacabello"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                        <a class="nav-link" href="./clinica.html">La Clinica</a>
+                        <a class="nav-link" href="./equipo.html">El Equipo</a>
+                        <a class="nav-link" href="./tratamientos.html">Tratamientos</a>
+                        <a class="nav-link active" aria-current="page" href="#">Contacto</a>
+                    </div>
+                </div>
+            </div>
         </nav>
+
     </header>
 
     <main class="contacto">
