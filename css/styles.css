@@ -20,51 +20,63 @@ body {
   color: #333;
 }
 
-/* header*/
+/* header nuevo*/
+.propia{
+  background-color: white;
+}
+.btn-cita{
+  color: white;
+  background-color: #008BA6 ;
+  padding: 15px;
+  border: none;
+  border-radius: 40px;
+  text-decoration: none;
+}
 
-/*color de texto de la nav*/
+
+
+
+
+
+
+/*color de texto de la nav
 header a{
     color: #202121;
     text-decoration: none;
     font-weight: 700;
 }
-/*lista sin puntos*/
+lista sin puntos
 li{
   list-style: none;
 }
-
 header li{
   padding: 5px 10px;
 }
-
-/*tamaño del logo de encabezado*/
+/*tamaño del logo de encabezado
 header img{
     margin: 5px 60px ;
     width: 300px;
 }
-/*button pedir cita*/
+/*button pedir cita
 header button{
-    color: white;
-    background-color: #008BA6 ;
-    padding: 15px;
-    border: none;
-    border-radius: 40px;
+  color: white;
+  background-color: #008BA6 ;
+  padding: 15px;
+  border: none;
+  border-radius: 40px;
 }
-
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 60px;
 }
-
 .navbar {
   flex: 1;
   display: flex;
   justify-content: right;
   margin-right: 50px;
 }
-
 .nav-menu {
   list-style: none;
   display: flex;
@@ -75,7 +87,7 @@ header button{
   
 
 
-/*main*/
+/*main---------------------------------------------------*/
 
 /*seccion banner*/
 .banner{
