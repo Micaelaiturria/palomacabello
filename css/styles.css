@@ -293,9 +293,26 @@ footer {
   /*html equipo---------------------------------------------------------------------------------*/
 .equipo {
   padding: 4rem 10%;
-  background-color: #e42f2f;
   text-align: center;
 }
+.grid-equipo {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5vh; 
+  justify-items: center;
+  margin-top: 5%;
+}
+.miembro img {
+  width: 100%;
+  border-radius: 20px;
+  max-width: 320px;
+  height: auto;
+}
+.miembro img:hover {
+  transform: scale(1.05);
+}
+
+
 
 
 
