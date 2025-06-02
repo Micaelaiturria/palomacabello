@@ -332,43 +332,45 @@ footer {
 .miembro img:hover {
   transform: scale(1.05);
 }
-/*html tratamientos--**/
 
 
+/*html tratamientos----------------------------------------**/
+.tratamientos-box button{
+  background-color: #48d8eb;
+  font-size: large;
+  border: none;
+  border-radius: 5%;
+  
 
+}
 
+.contenedor-tratamiento .tratamientos-box{
+  width: 70%;
+  margin: 3%;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  padding: 5%;
+  gap: 5%;
+  
 
-  /*html tratamientos-----------------------------------------------------------------------
+}
 
-  .icon-tr{
-    width: 20px;
+.icon-tr{
+    width: 10%;
+    height: auto;
   }
 
-  main div button{
-    background-color: #ffffff;
-    font-size: large;
-  }
+.contenedor-tratamiento .tratamientos-box button{
+  display: flex;
+  justify-content: center;
+  gap: 10%;
 
-  main div{
-    width: 70%;
-    margin: 3%;
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    gap: 5%;
-    
-    
-  }
+}
+.contenedor-tratamiento .tratamientos-box button:hover{
+  background: #dfe0e0;
+}
 
-  main div button{
-    display: flex;
-    justify-content: center;
-    gap: 10%;
-  }
 
-  main div button:hover{
-    background: #dfe0e0;
-
-  }**/
   /**html contacto------------------------**/
   
   .formulario-container {
