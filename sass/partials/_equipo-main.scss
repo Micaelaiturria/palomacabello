@@ -1,0 +1,36 @@
+@import 'variables';
+
+/* html equipo */
+.equipo {
+  padding: ($spacing-unit * 2) 10%;
+  text-align: center;
+  .equipo-container { // Si .equipo-container es una clase dentro de .equipo
+    h2 {
+      margin-bottom: $spacing-unit;
+    }
+    p {
+      margin-top: $spacing-unit;
+      margin-bottom: ($spacing-unit * 2.5); // 5%
+      line-height: 1.7;
+    }
+  }
+}
+
+.grid-equipo {
+  @include grid-layout(repeat(3, 1fr), ($spacing-unit * 2.5)); // 5vh gap aprox, usando rem
+  justify-items: center;
+  margin-top: ($spacing-unit * 2.5); // 5%
+}
+
+.miembro {
+  img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    border-radius: $border-radius-large;
+    transition: transform 0.3s ease;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}

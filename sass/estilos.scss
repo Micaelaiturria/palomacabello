@@ -1,0 +1,58 @@
+@import 'partials/variables';
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@mixin flex-container($direction: row, $justify: flex-start, $align: stretch) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+@mixin grid-layout($columns, $gap: 1rem) {
+  display: grid;
+  grid-template-columns: $columns;
+  gap: $gap;
+}
+
+@mixin button-base-mixin($bg-color, $text-color: $color-white, $padding: 0.5rem 1rem, $radius: $border-radius-large) {
+  background-color: $bg-color;
+  color: $text-color;
+  padding: $padding;
+  border: none;
+  border-radius: $radius;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+
+%button-shared {
+  padding: 0.5rem 1rem;
+  border-radius: $border-radius-large;
+  text-decoration: none;
+  display: inline-block;
+  color: $color-white;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+
+body {
+  font-family: $font-primary;
+  line-height: 1.6;
+  color: $color-text-default;
+  background-color: $color-white; 
+}
+
+@import 'partials/headeryfooter';
+@import 'partials/index-main';
+@import 'partials/clinica-main';
+@import 'partials/equipo-main';
+@import 'partials/tratamientos-main';
+@import 'partials/contacto-main';
+

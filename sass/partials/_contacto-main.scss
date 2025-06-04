@@ -1,0 +1,103 @@
+@import 'variables';
+
+
+/* html contacto */
+
+.formulario-container {
+  @include flex-container(row, center, flex-start); 
+  flex-wrap: wrap;
+  padding: ($spacing-unit * 2) 0; 
+  max-width: 1000px; 
+  margin: ($spacing-unit * 2) auto; 
+  gap: ($spacing-unit * 2); 
+}
+
+.formulario, .mapa {
+  flex: 1 1 400px; 
+  background-color: $color-white;
+  padding: ($spacing-unit * 2); 
+  border-radius: $border-radius-medium;
+  box-shadow: 0 0 10px rgba($color-black, 0.1);
+}
+
+.formulario {
+  h2 {
+    margin-bottom: ($spacing-unit * 1.5); 
+    color: $color-text-default;
+  }
+
+  label {
+    display: block;
+    margin-top: $spacing-unit;
+    font-weight: bold;
+  }
+
+  input[type="text"],
+  input[type="tel"],
+  textarea {
+    width: 100%;
+    padding: ($spacing-unit / 1.5); 
+    margin-top: ($spacing-unit / 2);
+    border: 1px solid $color-border-light;
+    border-radius: $border-radius-small;
+    font-family: $font-primary;
+  }
+
+  textarea {
+    min-height: 100px;
+  }
+
+  .checkbox {
+    margin-top: ($spacing-unit * 1.5);
+    @include flex-container(row, flex-start, center);
+    gap: ($spacing-unit / 2);
+    label {
+      font-weight: normal;
+      margin-top: 0;
+    }
+    input[type="checkbox"]{
+      width: auto;
+    }
+  }
+
+  button[type="submit"] {
+    @extend %button-shared; // Uso de @extend
+    background-color: $color-button-contact;
+    margin-top: ($spacing-unit * 1.5);
+    padding: ($spacing-unit * 0.8) ($spacing-unit * 1.5); 
+    transition: background-color 0.3s ease;
+    &:hover {
+      background-color: $color-button-contact-hover;
+    }
+  }
+}
+
+.mapa {
+  h3 {
+    margin-top: 0;
+    margin-bottom: $spacing-unit;
+    color: $color-text-default;
+  }
+  p {
+    margin-bottom: $spacing-unit / 2;
+    font-size: 0.95em;
+  }
+  iframe {
+    border-radius: $border-radius-small; 
+  }
+}
+
+
+.footer-pcontacto { 
+  @include flex-container(row, center, center);
+  gap: ($spacing-unit);
+  padding: ($spacing-unit);
+  background-color: darken($color-background-light, 5%); 
+
+  img {
+    width: 15%; 
+    max-width: 50px;
+    height: auto;
+  }
+
+}

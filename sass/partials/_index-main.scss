@@ -1,0 +1,163 @@
+@import 'variables';
+
+/* Main - index.html */
+
+/* Sección banner */
+.banner {
+  background-image: url(../medios/katarzyna-zygnerska-YNvApgvL7UQ-unsplash.jpg);
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  color: $color-black;
+  @include flex-container(column, flex-end, flex-start); // Uso de @mixin, ajustado para alinear a la izquierda
+  padding-left: 10%; // Para el margen de los textos
+  padding-bottom: 3%;
+}
+
+.text-banner {
+  // margin-left: 10%; // Controlado por el padding del banner
+  h1 { // Asumiendo que .text-banner contiene el h1
+    margin-bottom: $spacing-unit / 2;
+    strong {
+      font-weight: 700; // Bootstrap puede manejar esto también
+    }
+  }
+}
+
+.text-banner2 {
+  // margin-bottom: 3%; // Controlado por el padding del banner
+  // margin-left: 10%;
+  p { // Asumiendo que .text-banner2 contiene el p
+    max-width: 60%; // Para que no ocupe todo el ancho
+  }
+}
+
+/* Sección Objetivo / Confianza */
+.objetivo {
+  @include flex-container(row, center, center); // Uso de @mixin
+  padding: ($spacing-unit * 2);
+  gap: ($spacing-unit * 2);
+  margin: 5% 0; // Solo margen vertical si el padding maneja el horizontal
+
+  // &.reverse se maneja por el orden del HTML, no necesita CSS específico si la estructura es la misma
+  // Si hubiera .objetivo.reverse { flex-direction: row-reverse; } se podría hacer:
+  // &.reverse {
+  //   flex-direction: row-reverse;
+  // }
+
+  .content {
+    flex: 1;
+    @include flex-container(column, flex-start, flex-start); // Uso de @mixin
+    h2 {
+      margin-bottom: $spacing-unit;
+    }
+    p {
+      margin-bottom: $spacing-unit;
+    }
+    a.btn { // Especificidad para el botón dentro de .content
+      width: auto; // Que se ajuste al contenido
+      max-width: 45%; // O un ancho máximo
+    }
+  }
+
+  img {
+    width: 50%;
+    max-width: 500px; // Para que no se haga demasiado grande
+    height: auto;
+    border-radius: $border-radius-medium;
+  }
+}
+
+.btn { // Estilo base para .btn, puede ser extendido o personalizado
+  @extend %button-shared; // Uso de @extend
+  background: $color-button-action;
+  margin-top: $spacing-unit;
+}
+
+/* Sección tratamientos/index */
+.tratamientos {
+  padding: ($spacing-unit * 2);
+  background: $color-background-f9;
+  text-align: center; // Para h2 y .subtitulo
+
+  h2 {
+    margin-bottom: ($spacing-unit / 2);
+  }
+  .subtitulo {
+    margin-bottom: $spacing-unit * 1.5;
+    color: $color-text-muted;
+  }
+}
+
+.grid-tratamientos {
+  @include grid-layout(repeat(3, 1fr), $spacing-unit); // Uso de @mixin
+}
+
+.tratamiento { // Estilo para cada item del grid
+  background: $color-white;
+  padding: $spacing-unit * 1.5; // Aumentamos padding
+  border: 1px solid $color-border-light;
+  border-radius: $border-radius-medium;
+  text-align: left; // Cambiado para el contenido interno
+  @include flex-container(row, flex-start, center); // Uso de @mixin para alinear imagen y texto
+  gap: $spacing-unit;
+
+  img {
+    max-width: 100px; // Ajustar según el diseño deseado
+    height: auto; // Mantener proporción
+    // max-width: 30%; // Original
+    // height: 30%; // Original - height en % es problemático sin contenedor con altura definida
+    margin-right: $spacing-unit; // Espacio entre imagen y texto
+  }
+
+  .descrip-tratamiento {
+    @include flex-container(column, center, flex-start); // Uso de @mixin
+    h2 {
+      color: $color-aqua-oscuro;
+      font-size: 1.25em; // Ajustar tamaño
+      margin-bottom: ($spacing-unit / 2);
+      text-align: left;
+    }
+    p {
+      font-size: 0.9em;
+      text-align: left;
+    }
+  }
+}
+
+/* Testimonios */
+.testimonios {
+  padding: ($spacing-unit * 2);
+  text-align: center;
+  margin: 0 10%;
+
+  h2 {
+    margin-bottom: $spacing-unit * 1.5;
+  }
+}
+
+.grid-testimonios {
+  @include grid-layout(repeat(auto-fit, minmax(220px, 1fr)), $spacing-unit); // Uso de @mixin
+  margin-top: $spacing-unit;
+}
+
+.testimonial {
+  background: $color-background-f3;
+  padding: $spacing-unit * 1.5; // Aumentamos padding
+  border-radius: $border-radius-medium;
+  .estrellas {
+    font-size: 1.2rem;
+    color: $color-star-rating;
+    margin-bottom: $spacing-unit;
+  }
+  p {
+    font-size: 0.95em;
+    margin-bottom: $spacing-unit;
+    min-height: 60px; // Para alinear un poco las alturas
+  }
+  h4 {
+    margin-top: ($spacing-unit / 2);
+    font-weight: bold;
+    font-size: 1em;
+  }
+}
