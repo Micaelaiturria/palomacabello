@@ -2,10 +2,11 @@
 
 
 /* html contacto */
+
 .formulario-container {
   @include flex-container(row, center, flex-start); 
   flex-wrap: wrap;
-  padding: ($spacing-unit * 2) 0;
+  padding: ($spacing-unit * 2) 0; 
   max-width: 1000px; 
   margin: ($spacing-unit * 2) auto; 
   gap: ($spacing-unit * 2); 
@@ -43,7 +44,7 @@
   }
 
   textarea {
-    min-height: 100px; 
+    min-height: 100px;
   }
 
   .checkbox {
@@ -98,5 +99,5 @@
     max-width: 50px;
     height: auto;
   }
-  
+
 }

@@ -15,7 +15,6 @@
 }
 
 .text-banner {
-  
   h1 { 
     margin-bottom: $spacing-unit / 2;
     strong {
@@ -25,7 +24,6 @@
 }
 
 .text-banner2 {
-  
   p { 
     max-width: 60%; 
   }
@@ -37,7 +35,6 @@
   padding: ($spacing-unit * 2);
   gap: ($spacing-unit * 2);
   margin: 5% 0; 
-    }
 
   .content {
     flex: 1;
@@ -60,7 +57,7 @@
     height: auto;
     border-radius: $border-radius-medium;
   }
-
+}
 
 .btn { 
   @extend %button-shared; 

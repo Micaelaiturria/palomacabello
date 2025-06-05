@@ -1,27 +1,27 @@
-
 @import 'variables';
 
-
 /* html tratamientos */
+
 .contenedor-tratamiento {
-  @include flex-container(row, center, center); 
+  @include flex-container(row, center, center);
   padding: ($spacing-unit * 2) 0; 
 }
+
 .tratamientos-box {
   width: 70%;
   margin: ($spacing-unit * 1.5) 0; 
   @include grid-layout(repeat(4, 1fr), ($spacing-unit * 1.5)); 
-  padding: ($spacing-unit * 2.5);
+  padding: ($spacing-unit * 2.5); 
 
   button { 
-    @include button-base-mixin($color-button-tratamientos, $color-text-default, $spacing-unit, $border-radius-medium);
+    @include button-base-mixin($color-button-tratamientos, $color-text-default, $spacing-unit, $border-radius-medium); 
     font-size: $font-size-base; 
     @include flex-container(row, center, center);
     gap: 10%;
     transition: background-color 0.3s ease;
 
     .icon-tr {
-      width: 24px; 
+      width: 24px;
       height: auto;
     }
 
@@ -30,3 +30,4 @@
     }
   }
 }
+

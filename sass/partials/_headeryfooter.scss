@@ -1,6 +1,5 @@
 @import 'variables';
 
-
 .propia { 
   background-color: $color-background-light;
 }
@@ -42,8 +41,6 @@ footer {
   margin: 0 5%;
 }
 
-
-
 .footer-about {
   img {
     margin-bottom: $spacing-unit; 
@@ -81,7 +78,8 @@ footer {
       }
     }
   }
-  li { 
+
+  li {
     color: $color-gris;
     font-size: 0.9em;
   }
@@ -104,4 +102,3 @@ footer {
   background-color: $color-button-action;
   margin-top: $spacing-unit;
 }
-//*header y footer ok

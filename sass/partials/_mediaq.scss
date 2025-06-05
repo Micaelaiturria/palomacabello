@@ -1,0 +1,189 @@
+@import 'variables';
+
+@media screen and (max-width: 480px) { 
+  .header { 
+    .navbar-brand img {
+      width: 180px; 
+      margin: 0 auto; 
+    }
+  }
+
+  .navbar-nav { 
+    align-items: center; 
+    .nav-link {
+      padding: ($spacing-unit * 0.8) 0; 
+      margin-right: 0; 
+      font-size: $font-size-base;
+    }
+  }
+  .btn-cita { 
+    font-size: 0.85rem;
+    padding: $spacing-unit * 0.8;
+  }
+
+  .banner {
+    padding: ($spacing-unit * 2) $spacing-unit; 
+    text-align: center;
+    height: auto; 
+    min-height: 300px;
+    @include flex-container(column, center, center);
+    .text-banner, .text-banner2 {
+      margin-left: 0;
+      max-width: 100%;
+      h1 { 
+        font-size: 1.4rem;
+        margin-bottom: $spacing-unit;
+      }
+      p { 
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  .objetivo,
+  .objetivo.reverse { 
+    flex-direction: column;
+    margin: $spacing-unit;
+    padding: $spacing-unit;
+    gap: $spacing-unit;
+    img {
+      width: 100%; 
+      height: auto;
+      order: 1; 
+    }
+    .content {
+      text-align: center;
+      padding: 0;
+      order: 2; 
+      h2 {
+        font-size: 1.5rem;
+      }
+      p {
+        font-size: 0.9rem;
+      }
+      a.btn {
+        display: block; 
+        width: 90%;
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: $spacing-unit * 0.9;
+        font-size: 0.9rem;
+      }
+    }
+  }
+
+  .grid-tratamientos { 
+    @include grid-layout(1fr, $spacing-unit * 0.75); 
+    padding: 0 $spacing-unit;
+    .tratamiento { 
+        flex-direction: column; 
+        align-items: center;
+        padding: $spacing-unit;
+        text-align: center;
+        img {
+            max-width: 70px; 
+            margin-right: 0;
+            margin-bottom: ($spacing-unit / 2);
+        }
+        .descrip-tratamiento {
+            align-items: center; 
+             h2 {
+                font-size: 1.1em;
+                text-align: center;
+             }
+             p {
+                 font-size: 0.85em;
+                 text-align: center;
+             }
+        }
+    }
+  }
+  
+  .testimonios {
+      padding: $spacing-unit; 
+      margin: 0 $spacing-unit; 
+  }
+  .grid-testimonios {
+     @include grid-layout(1fr, $spacing-unit); 
+     margin-top: $spacing-unit;
+     .testimonial p {
+         min-height: auto; 
+     }
+  }
+
+
+  .footer-container {
+    @include grid-layout(1fr, $spacing-unit * 1.5);
+    text-align: center;
+    padding: ($spacing-unit * 1.5) $spacing-unit;
+    .footer-about img {
+        margin-left: auto;
+        margin-right: auto; 
+    }
+    .social-icons {
+        @include flex-container(row, center, center); 
+    }
+  }
+
+  button, 
+  .btn { 
+    font-size: 0.9rem;
+    padding: ($spacing-unit * 0.8) ($spacing-unit * 1.2); 
+  }
+
+  // Página Clínica
+  .text-clinica { 
+      margin-top: $spacing-unit;
+      h1.clinica-titulo { font-size: 1.6rem;}
+      p { margin: $spacing-unit 5%; font-size: 0.9rem;}
+  }
+  .galeria-container { 
+     margin: $spacing-unit;
+     @include grid-layout(1fr, 2px); 
+     grid-template-areas: 
+        "img-1"
+        "img-2"
+        "img-3"
+        "img-4"
+        "img-5"
+        "img-6";
+  }
+// Página Equipo
+  .equipo { 
+    padding: $spacing-unit;
+    h2 { font-size: 1.6rem; }
+    .equipo-container p { font-size: 0.9rem; margin-top: $spacing-unit / 2; margin-bottom: $spacing-unit;}
+  }
+  .grid-equipo { 
+    @include grid-layout(1fr, $spacing-unit);
+    margin-top: $spacing-unit;
+  }
+// Página Tratamientos
+  .tratamientos-box {  
+     width: 90%;
+     @include grid-layout(1fr, $spacing-unit); 
+     padding: $spacing-unit;
+     button {
+        font-size: $font-size-base * 0.9;
+        padding: $spacing-unit * 0.8;
+        .icon-tr {
+            width: 20px;
+        }
+     }
+  }
+// Página Contacto
+  .formulario-container { 
+    flex-direction: column;
+    padding: $spacing-unit 0;
+    max-width: 100%;
+    margin: $spacing-unit auto;
+    .formulario, .mapa {
+        width: 90%; 
+        margin-left: auto;
+        margin-right: auto;
+        padding: $spacing-unit;
+    }
+    .formulario h2 { font-size: 1.5rem; }
+  }
+}
