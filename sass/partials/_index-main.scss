@@ -1,0 +1,155 @@
+@import 'variables';
+
+/* Main - index.html */
+
+/* Sección banner */
+.banner {
+  background-image: url(../medios/katarzyna-zygnerska-YNvApgvL7UQ-unsplash.jpg);
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  color: $color-black;
+  @include flex-container(column, flex-end, flex-start); 
+  padding-left: 10%; 
+  padding-bottom: 3%;
+}
+
+.text-banner {
+  
+  h1 { 
+    margin-bottom: $spacing-unit / 2;
+    strong {
+      font-weight: 700; 
+    }
+  }
+}
+
+.text-banner2 {
+  
+  p { 
+    max-width: 60%; 
+  }
+}
+
+/* Sección Objetivo / Confianza */
+.objetivo {
+  @include flex-container(row, center, center); 
+  padding: ($spacing-unit * 2);
+  gap: ($spacing-unit * 2);
+  margin: 5% 0; 
+    }
+
+  .content {
+    flex: 1;
+    @include flex-container(column, flex-start, flex-start); 
+    h2 {
+      margin-bottom: $spacing-unit;
+    }
+    p {
+      margin-bottom: $spacing-unit;
+    }
+    a.btn { 
+      width: auto; 
+      max-width: 45%; 
+    }
+  }
+
+  img {
+    width: 50%;
+    max-width: 500px; 
+    height: auto;
+    border-radius: $border-radius-medium;
+  }
+
+
+.btn { 
+  @extend %button-shared; 
+  background: $color-button-action;
+  margin-top: $spacing-unit;
+}
+
+/* Sección tratamientos/index */
+.tratamientos {
+  padding: ($spacing-unit * 2);
+  background: $color-background-f9;
+  text-align: center; 
+
+  h2 {
+    margin-bottom: ($spacing-unit / 2);
+  }
+  .subtitulo {
+    margin-bottom: $spacing-unit * 1.5;
+    color: $color-text-muted;
+  }
+}
+
+.grid-tratamientos {
+  @include grid-layout(repeat(3, 1fr), $spacing-unit); 
+}
+
+.tratamiento { 
+  background: $color-white;
+  padding: $spacing-unit * 1.5; 
+  border: 1px solid $color-border-light;
+  border-radius: $border-radius-medium;
+  text-align: left; 
+  @include flex-container(row, flex-start, center); 
+  gap: $spacing-unit;
+
+  img {
+    max-width: 100px; 
+    height: auto; 
+    margin-right: $spacing-unit; 
+  }
+
+  .descrip-tratamiento {
+    @include flex-container(column, center, flex-start); 
+    h2 {
+      color: $color-aqua-oscuro;
+      font-size: 1.25em; 
+      margin-bottom: ($spacing-unit / 2);
+      text-align: left;
+    }
+    p {
+      font-size: 0.9em;
+      text-align: left;
+    }
+  }
+}
+
+/* Testimonios */
+.testimonios {
+  padding: ($spacing-unit * 2);
+  text-align: center;
+  margin: 0 10%;
+
+  h2 {
+    margin-bottom: $spacing-unit * 1.5;
+  }
+}
+
+.grid-testimonios {
+  @include grid-layout(repeat(auto-fit, minmax(220px, 1fr)), $spacing-unit); 
+  margin-top: $spacing-unit;
+}
+
+.testimonial {
+  background: $color-background-f3;
+  padding: $spacing-unit * 1.5; 
+  border-radius: $border-radius-medium;
+  .estrellas {
+    font-size: 1.2rem;
+    color: $color-star-rating;
+    margin-bottom: $spacing-unit;
+  }
+  p {
+    font-size: 0.95em;
+    margin-bottom: $spacing-unit;
+    min-height: 60px; 
+  }
+  h4 {
+    margin-top: ($spacing-unit / 2);
+    font-weight: bold;
+    font-size: 1em;
+  }
+}
