@@ -1,9 +1,9 @@
-/* Error: Undefined variable.
+/* Error: Can't find stylesheet to import.
  *    ,
- * 31 |   border-radius: $border-radius-large;
- *    |                  ^^^^^^^^^^^^^^^^^^^^
+ * 54 | @import 'partials/header-footer';
+ *    |         ^^^^^^^^^^^^^^^^^^^^^^^^
  *    '
- *   sass\estilos.scss 31:18  root stylesheet */
+ *   sass\estilos.scss 54:9  root stylesheet */
 
 body::before {
   font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
@@ -13,5 +13,5 @@ body::before {
   padding: 1em;
   margin-bottom: 1em;
   border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 31 \2502    border-radius: $border-radius-large;\d\a    \2502                   ^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   sass\\estilos.scss 31:18  root stylesheet";
+  content: "Error: Can't find stylesheet to import.\a    \2577 \a 54 \2502  @import 'partials/header-footer';\d\a    \2502          ^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   sass\\estilos.scss 54:9  root stylesheet";
 }
