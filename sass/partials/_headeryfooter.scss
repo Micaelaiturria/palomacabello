@@ -1,0 +1,106 @@
+@import 'variables';
+
+
+.propia { 
+  background-color: $color-background-light;
+}
+
+.navbar-brand {
+  img {
+    width: 300px; 
+  }
+}
+
+.navbar-nav .nav-link {
+  margin-right: 70px; 
+  font-size: $font-size-medium; 
+  color: $color-text-default; 
+  font-weight: 700;
+  text-decoration: none;
+
+  &.active,
+  &:hover {
+    color: $color-aqua-oscuro; 
+  }
+}
+
+.btn-cita {
+  @extend %button-shared; 
+  background-color: $color-aqua-oscuro;
+  padding: 15px;
+  border-radius: $border-radius-xlarge;
+}
+
+/* Footer */
+footer {
+  background-color: $color-background-light;
+  padding: ($spacing-unit * 2);
+}
+
+.footer-container {
+  @include grid-layout(repeat(auto-fit, minmax(180px, 1fr)), ($spacing-unit * 2)); 
+  margin: 0 5%;
+}
+
+
+
+.footer-about {
+  img {
+    margin-bottom: $spacing-unit; 
+  }
+  p {
+    font-size: 0.9em;
+    margin-bottom: $spacing-unit;
+  }
+}
+
+.social-icons {
+  img {
+    margin-right: ($spacing-unit / 2);
+    width: 24px; 
+    height: 24px;
+  }
+}
+
+.footer-links {
+  h4 {
+    margin-bottom: $spacing-unit;
+    color: $color-text-default;
+  }
+  ul {
+    list-style: none;
+    padding-left: 0;
+    li {
+      margin: ($spacing-unit / 2) 0;
+      a {
+        text-decoration: none;
+        color: $color-gris;
+        &:hover {
+          color: $color-aqua-oscuro;
+        }
+      }
+    }
+  }
+  li { 
+    color: $color-gris;
+    font-size: 0.9em;
+  }
+}
+
+.footer-contact {
+  h4 {
+    margin-bottom: $spacing-unit;
+    color: $color-text-default;
+  }
+  p {
+    margin: ($spacing-unit / 2) 0;
+    font-size: 0.9em;
+    color: $color-gris;
+  }
+}
+
+.btn-footer {
+  @extend %button-shared; 
+  background-color: $color-button-action;
+  margin-top: $spacing-unit;
+}
