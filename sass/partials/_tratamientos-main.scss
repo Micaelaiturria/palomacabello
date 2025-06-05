@@ -1,0 +1,9 @@
+
+@import 'variables';
+
+
+/* html tratamientos */
+.contenedor-tratamiento {
+  @include flex-container(row, center, center); 
+  padding: ($spacing-unit * 2) 0; 
+}
